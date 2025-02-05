@@ -1,0 +1,49 @@
+/* 使用 Flex 布局实现居中 */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 游戏区域容器 */
+  #gameContainer {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  /* UI 样式（分数和生命值显示） */
+  #ui {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    user-select: none;
+    z-index: 10;
+  }
+  
+  /* canvas 样式 */
+  #gameCanvas {
+    display: block;
+    background: url('assets/map_bg.jpg') repeat;
+  }
+  
+  /* 控制区域 */
+  #controls {
+    margin: 10px 0 20px;
+    text-align: center;
+  }
+  
+  /* 控制按钮样式 */
+  #controls button {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>吃豆人游戏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <!-- 显示分数和生命值 -->
+    <div id="ui">
+      <span id="score">分数: 0</span> &nbsp;&nbsp;
+      <span id="lives">生命: 3</span>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+  <!-- 控制区域：按钮放在地图下方 -->
+  <div id="controls">
+    <button id="restartBtn">重新开始</button>
+    <button id="musicToggleBtn">关闭背景音乐</button>
+  </div>
+  
+  <!-- 背景音乐 -->
+  <audio id="bgMusic" loop src="assets/music.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
